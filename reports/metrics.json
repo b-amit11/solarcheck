@@ -1,0 +1,124 @@
+{
+  "seed": 42,
+  "device": "cpu",
+  "epochs": 12,
+  "selected_epoch": 11,
+  "training_seconds": 23.64212316600606,
+  "source_images": 2624,
+  "excluded_ambiguous": 401,
+  "exact_duplicates_removed": 0,
+  "counts": {
+    "train": 1333,
+    "val": 445,
+    "test": 445
+  },
+  "threshold_rule": "Highest validation threshold reaching at least 90% recall; test performance may differ.",
+  "selection_rule": "Maximum validation average precision across 12 fixed epochs. Test not used for selection.",
+  "cnn_validation": {
+    "average_precision": 0.7217517187266359,
+    "roc_auc": 0.8118371694530635,
+    "recall": 0.9020979020979021,
+    "precision": 0.42295081967213116,
+    "f1": 0.5758928571428571,
+    "false_positive_rate": 0.5827814569536424,
+    "confusion_matrix": [
+      [
+        126,
+        176
+      ],
+      [
+        14,
+        129
+      ]
+    ],
+    "threshold": 0.28351837396621704
+  },
+  "cnn_test": {
+    "average_precision": 0.6911511027302781,
+    "roc_auc": 0.8010466354837216,
+    "recall": 0.9090909090909091,
+    "precision": 0.42483660130718953,
+    "f1": 0.579064587973274,
+    "false_positive_rate": 0.5827814569536424,
+    "confusion_matrix": [
+      [
+        126,
+        176
+      ],
+      [
+        13,
+        130
+      ]
+    ],
+    "threshold": 0.28351837396621704
+  },
+  "baseline_test": {
+    "average_precision": 0.7281033571664127,
+    "roc_auc": 0.8143611355531886,
+    "recall": 0.8881118881118881,
+    "precision": 0.4205298013245033,
+    "f1": 0.5707865168539326,
+    "false_positive_rate": 0.5794701986754967,
+    "confusion_matrix": [
+      [
+        127,
+        175
+      ],
+      [
+        16,
+        127
+      ]
+    ],
+    "threshold": 0.2268736098732012
+  },
+  "test_positive_prevalence": 0.32134831460674157,
+  "test_slices": {
+    "mono": {
+      "average_precision": 0.7910770682795674,
+      "roc_auc": 0.8199835975943138,
+      "recall": 0.9032258064516129,
+      "precision": 0.4,
+      "f1": 0.5544554455445545,
+      "false_positive_rate": 0.711864406779661,
+      "confusion_matrix": [
+        [
+          34,
+          84
+        ],
+        [
+          6,
+          56
+        ]
+      ],
+      "threshold": 0.28351837396621704
+    },
+    "poly": {
+      "average_precision": 0.6711465748886984,
+      "roc_auc": 0.7937466451959205,
+      "recall": 0.9135802469135802,
+      "precision": 0.4457831325301205,
+      "f1": 0.5991902834008097,
+      "false_positive_rate": 0.5,
+      "confusion_matrix": [
+        [
+          92,
+          92
+        ],
+        [
+          7,
+          74
+        ]
+      ],
+      "threshold": 0.28351837396621704
+    }
+  },
+  "limitations": [
+    "Image-level split, not module-level: module IDs are unavailable in this dataset interface. Related cells can cross splits; results do not establish unseen-module generalization.",
+    "Ambiguous labels excluded: binary extreme-label task is easier and not the original four-level benchmark.",
+    "Scores are not calibrated probabilities.",
+    "One seed, one small architecture, no field validation."
+  ],
+  "versions": {
+    "torch": "2.14.0"
+  }
+}

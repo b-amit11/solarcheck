@@ -1,0 +1,8 @@
+torch>=2.5,<3
+numpy>=2,<3
+scikit-learn>=1.5,<2
+pandas>=2.2,<4
+Pillow>=10,<13
+streamlit>=1.45,<2
+pytest>=8,<10
+elpv-dataset

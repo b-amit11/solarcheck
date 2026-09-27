@@ -1,0 +1,17 @@
+{
+  "source": "https://github.com/zae-bayern/elpv-dataset",
+  "package_version": "1.0.0.post1",
+  "license_images": "CC-BY-NC-SA-4.0",
+  "image_shape": [
+    2624,
+    300,
+    300
+  ],
+  "labels": {
+    "0.0": 1508,
+    "0.3333333333333333": 295,
+    "0.6666666666666666": 106,
+    "1.0": 715
+  },
+  "archive_sha256": "f9e57445d397a51e01ddedeb07b84494996fdb11c2fc3c5d398f0311744a8afb"
+}
