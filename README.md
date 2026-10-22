@@ -1,6 +1,10 @@
 # SolarCheck
 
+[![Tests](https://github.com/b-amit11/solarcheck/actions/workflows/ci.yml/badge.svg)](https://github.com/b-amit11/solarcheck/actions/workflows/ci.yml)
+
 A PyTorch experiment for flagging potentially defective solar cells in electroluminescence (EL) images. Includes an original small CNN trained from scratch, a pixel-based logistic regression baseline, reproducible data splits, validation-only checkpoint and threshold selection, and a local Streamlit inspection interface.
+
+**Stack:** Python · PyTorch · scikit-learn · NumPy · Streamlit · pytest · Docker · GitHub Actions
 
 ## Result first
 
